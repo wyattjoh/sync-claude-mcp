@@ -1,0 +1,14 @@
+{
+  "name": "@wyattjoh/sync-claude-mcp",
+  "version": "0.1.0",
+  "license": "MIT",
+  "exports": "./sync-claude-mcp.ts",
+  "imports": {
+    "@std/path": "jsr:@std/path@^1.0.8",
+    "@std/fs": "jsr:@std/fs@^1.0.5"
+  },
+  "tasks": {
+    "sync": "deno run --allow-read --allow-write --allow-env sync-claude-mcp.ts",
+    "build": "deno compile --allow-read --allow-write --allow-env --output sync-claude-mcp sync-claude-mcp.ts"
+  }
+}
