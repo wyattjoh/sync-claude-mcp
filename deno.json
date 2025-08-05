@@ -9,6 +9,9 @@
   },
   "tasks": {
     "sync": "deno run --allow-read --allow-write --allow-env sync-claude-mcp.ts",
-    "build": "deno compile --allow-read --allow-write --allow-env --output sync-claude-mcp sync-claude-mcp.ts"
+    "build": "deno compile --allow-read --allow-write --allow-env --output sync-claude-mcp sync-claude-mcp.ts",
+    "fmt": "deno fmt",
+    "lint": "deno lint",
+    "check": "deno check sync-claude-mcp.ts"
   }
 }
